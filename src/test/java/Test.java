@@ -10,7 +10,12 @@ public class Test {
         WebDriver driver = new ChromeDriver();
 
         driver.get("https://www.google.com/");
-        System.out.println("Browser Launch Successful");
+        System.out.println("Browser Launch Successfull");
+
+        String title = driver.getTitle();
+        System.out.println(title);
+
+        System.out.println(driver.getCurrentUrl());
 
         driver.close();
     }
